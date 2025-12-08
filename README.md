@@ -1,4 +1,5 @@
-Jake Bryant Portfolio Site (V1)
+My personal website.
+
 This project is a personal portfolio website built entirely in Java using the Vaadin Flow framework. It serves as a digital resume and a demonstration of full-stack Java capabilities, eliminating the need for separate HTML/CSS files by handling UI logic server-side.
 
 Key Features
