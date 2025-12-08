@@ -64,11 +64,17 @@ public class MainView extends VerticalLayout {
 
 
  //Links
-        Anchor linkedIn = new Anchor("https://www.linkedin.com/in/jake-bryant-079484330/", "Visit my LinkedIn");
+        Anchor linkedIn = new Anchor("https://www.linkedin.com/in/jake-bryant-079484330/", "LinkedIn");
         linkedIn.getStyle().set("color", "white");
         linkedIn.getStyle().set("font-family", "Georgia, serif");
         linkedIn.getStyle().set("color", "white");
         linkedIn.getStyle().set("font-style", "italic");
+
+        Anchor gitHub = new Anchor("https://github.com/Durovo51", "GitHub");
+        gitHub.getStyle().set("color", "white");
+        gitHub.getStyle().set("font-family", "Georgia, serif");
+        gitHub.getStyle().set("color", "white");
+        gitHub.getStyle().set("font-style", "italic");
 
 
         HorizontalLayout linksSideways = new HorizontalLayout();
@@ -78,6 +84,7 @@ public class MainView extends VerticalLayout {
         linksSideways.getStyle().set("font-size", "20px");
         linksSideways.getStyle().set("color", "white");
         linksSideways.add(linkedIn);
+        linksSideways.add(gitHub);
 
  // Contact/Email Section
 
@@ -100,6 +107,7 @@ public class MainView extends VerticalLayout {
         nameField.getStyle().setColor("#4758B3");
 // Style the label color to be white (a bit tricky in Vaadin, but this helps visibility)
         nameField.getStyle().set("--vaadin-input-field-value-color", "white");
+        nameField.getStyle().set("font-family", "Georgia, serif");
 
         EmailField emailField = new EmailField("Email");
         emailField.setWidth("400px");
@@ -107,17 +115,20 @@ public class MainView extends VerticalLayout {
         emailField.setClearButtonVisible(true);
         emailField.getStyle().set("color", "white");
         emailField.getStyle().setColor("#4758B3");
+        emailField.getStyle().set("font-family", "Georgia, serif");
 
         TextArea commentField = new TextArea("Comment");
         commentField.setWidth("400px");
         commentField.setHeight("150px"); // Make it tall enough for a message
         commentField.getStyle().set("color", "white");
         commentField.getStyle().setColor("#4758B3");
+        commentField.getStyle().set("font-family", "Georgia, serif");
 
 // 4. Send Button
         Button sendButton = new Button("Send Message");
         sendButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY); // Makes it blue/highlighted
         sendButton.setWidth("200px");
+        sendButton.getStyle().set("background-color", "#4758B3");
 
 // 5. Button Logic (What happens when you click) and getting messages
         // REPLACES BOTH PREVIOUS LISTENERS
