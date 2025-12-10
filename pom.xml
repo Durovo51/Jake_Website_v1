@@ -16,8 +16,8 @@
     <description>Demo project for Jake Bryant&apos;s website</description>
 
     <properties>
-        <java.version>21</java.version>
-        <vaadin.version>24.3.0</vaadin.version>
+        <java.version>21</java.version> <!-- Need to make this version 25 and somehow switch the vaadin version -->
+        <vaadin.version>24.9.6</vaadin.version>
     </properties>
 
     <dependencies>
