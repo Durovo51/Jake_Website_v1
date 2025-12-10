@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: jake-bryant-portfolio
+    runtime: docker
+    plan: free
+    region: ohio # You can change this to 'oregon' (West US), 'frankfurt' (EU), etc.
+    branch: main
+    envVars:
+      - key: PORT
+        value: 8080
